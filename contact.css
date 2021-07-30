@@ -1,0 +1,48 @@
+body{
+    
+    background-image: url("images/mario1.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#contact-navbar nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-top: 2rem;
+    margin-right: 2rem;
+   list-style-type: none;
+}
+#contact-navbar nav ul li a{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: black;
+    font-weight: bold;
+    background-color: rgb(190, 63, 63);
+    opacity: 0.6;
+    padding: 1rem;
+    border:1px solid rgb(190, 63, 63);
+    transition: all 0.3s linear;
+    border-radius: 50%;
+}
+#contact-navbar nav ul li a:hover{
+    background-color: rgb(122, 18, 18);
+    color: white;
+}
+.contact-form{
+    background: rgb(243, 238, 238);
+    opacity: 0.8;
+    color: black;
+    width: 80%;
+    height: 100%;
+    margin-top: 3rem;
+    padding: 3rem;
+    box-shadow: 0 0 1rem 0.3 rem grey;
+}
+#contact-button{
+    width: 15rem;
+    
+}

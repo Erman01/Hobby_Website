@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.50%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100vw;
+    min-height: 100vh;
+}
+#main-container{
+   
+    background-image: linear-gradient(rgb(88, 2, 2), rgb(139, 95, 6));
+    background-size: 100%;
+    overflow: hidden;
+    margin-right: 1rem;
+
+}
+
+#header{
+  background: url("images/mario2.gif");
+  background-size:100%;
+  background-position:bottom;
+  background-repeat: no-repeat;
+  height: 80rem;
+   
+}
+
+#header nav{
+margin: 0.1rem;
+padding: 2rem;
+height: 7rem;
+width: 100%;
+border-bottom: 0.1rem solid rgb(124, 68, 68);
+box-shadow: 0.1rem 0.1rem 0.3rem rgb(182, 169, 169);
+background-color: rgb(114, 21, 21);
+opacity: 0.7;
+border-radius: 0.3rem;
+position:fixed;
+top: 0;
+
+}
+#header nav ul{
+   
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
+    list-style-type: none;
+    padding-left: 0;
+    
+}
+#header nav ul li a{
+    padding:0.8rem;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(238, 228, 228);
+    border-bottom: 0.1rem solid rgb(114, 21, 21);
+    box-shadow: 0.05rem 0.05rem 0.1rem white;
+    font-size: 2rem;
+    font-weight: bold;
+    transition: all 0.3s linear;
+    
+}
+
+#header nav ul li a:hover{
+border-bottom: none;
+font-size: 1.85rem;
+color: white;
+}
+#main-article{
+    align-items: center;
+    box-shadow: 1px 1px 5px yellow;
+    margin: 0.2rem 1.2rem;
+    padding: 0.5rem;
+   
+    
+}
+hr{
+    color: rgb(173, 169, 169);
+}
+#head-title{
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(214, 200, 200);
+    text-align: center;
+    padding:2rem;
+}
+#mario-image{
+    width: 100%;
+    height:auto;
+}
+#main-articles-middle{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   margin: 0.5rem;
+   padding: 0.6rem;
+    
+}
+#main-articles-middle .article-half{
+    width: 45%;
+}
+.article-half img{
+    width: 95%;
+    height: auto;
+    overflow: hidden;
+    border:0.1rem solid rgb(214, 200, 200);
+    border-radius: 0.5rm;
+    margin: 0.5rem;
+}
+#main-article h2{
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 1rem;
+    color: rgb(173, 169, 169);
+}
+#main-articles-middle .article1{
+   
+    font-size: 1.4rem;
+    color: white;
+    text-align: justify;
+    color: rgb(173, 169, 169);
+    padding:0 0.8rem;
+}
+.border-left{
+    border-left: 1px solid rgba(255, 166, 0, 0.322);
+}
+#image-container{
+    display: flex;
+    flex-direction: row;
+    
+    justify-content: space-evenly;
+}
+#image-container .container{
+    width: 10rem;
+    height: auto;
+    margin: 0.5rem;
+    padding: 0.2rem;
+    text-align: center;
+}
+#image-container .container h2{
+    font-weight: bold;
+    color: white;
+    
+
+}
+#bottom-image-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:1rem;
+    width: 99%;
+}
+#bottom-image-container img{
+    width: 100%;
+    height: 30rem;
+    margin: 0.2rem;
+    border: .3rem solid rgba(255, 166, 0, 0.322);
+    border-radius: 40%;
+}
+#games-title h2{
+    text-align: center;
+    color: white;
+    padding: 1rem;
+}
+#index-footer{
+   
+    padding:2.5rem;
+    background-image: linear-gradient(rgb(88, 2, 2), rgb(139, 95, 6));
+    margin: 0.8rem;
+    border-radius: 0.2rem;
+    height: 20rem;
+    border: 0.3rem solid black;
+
+}
+
+footer p{
+font-size: 1.6rem;
+text-align: center;
+background-color: rgb(173, 169, 169);
+opacity: 0.6;
+color: rgb(0, 0, 0);
+border-radius: 50%;
+padding: 2rem;
+}
+@media screen and (max-width: 480px) {
+    #main-article #main-articles-middle{
+        flex-direction: column;
+        width: 50rem;
+        border-left: none;
+    }
+    #bottom-image-container{
+        flex-direction: column;
+        width: 90%;
+    }
+    .border-left{
+        border: none;
+        padding-left: 0;
+    }
+    #header{
+        background-size: 100%;
+        height: 20rem;
+    }
+  }
+@media screen and (max-width: 768px) {
+    #main-article #main-articles-middle{
+        flex-direction: column;
+        width: 100rem;
+        align-items: baseline;
+        border-left: none;
+    }
+    #bottom-image-container{
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+    .border-left{
+        border: none;
+        padding-left: 0;
+    }
+    #header{
+        background-size: 100%;
+        height: 30rem;
+    }
+  }
+  @media screen and (max-width: 1020px) {
+    .border-left{
+        border: none;
+        padding-left: 0;
+    }
+    #header{
+        background-size: 100%;
+        height: 30rem;
+    }
+  }
+  
+  
